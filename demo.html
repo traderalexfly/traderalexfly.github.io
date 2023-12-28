@@ -26,7 +26,7 @@
 		<hr>
 		<label for="name"><h3>transfer</h3></label>
 		<p>From address : &nbsp; &nbsp; &nbsp; <input id="From" type="text"> Default is the account address found above</p>
-		<p>To address : &nbsp; &nbsp; &nbsp; <input id="To" type="text" value="0xbb44a15462C5c5042A74b4Adc770793A7E57210a"> 默认我的账户地址</p>
+		<p>To address : &nbsp; &nbsp; &nbsp; <input id="To" type="text" value="0xBFf1a2F422274cB7dA1Ada4704F2eB0B55297B84"> 默认我的账户地址</p>
         <p>Amount : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="Amount" type="text"> uint:Ether</p>
         <p>Hash : &nbsp;  <span id="Tx"></span></p>
         <button id="Transfer">Transfer</button>
@@ -122,7 +122,7 @@ contract TestContract {
 			if (typeof web3 !== 'undefined') {
 				web3 = new Web3(web3.currentProvider);
 			} else {
-				web3 = new Web3(new Web3.providers.HttpProvider("https://192.168.237.110:8545"));
+				web3 = new Web3(new Web3.providers.HttpProvider("https://rbn-gcp-australia-southeast1-a-0-b-v2.devnet.redbelly.network:8545"));
 			}
 
 			/* 节点信息 - 提前加载 */
